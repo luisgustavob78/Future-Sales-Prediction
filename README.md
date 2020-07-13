@@ -1,6 +1,6 @@
 # Future-Sales-Prediction
 
-O objetivo desta competição disponível no Kaggle é a obtenção de modelos de predição para obter estimativas sobre o volume de vendas futuro de alguns itens. Na abordagem aqui apresentada, optou-se por comparar os resultados entre a aplicação de um modelo de regressão random forest e os de uma regressão linear.
+O objetivo desta competição disponível no Kaggle é a obtenção de modelos de predição para obter estimativas sobre o volume de vendas futuro de alguns itens. Na abordagem aqui apresentada, optou-se por comparar os resultados entre a aplicação de alguns modelos de machine learning.
 
 ## 1. Exploração dos dados
 
@@ -26,9 +26,9 @@ Com o dataframe preparado, é hora de aplicar o modelo e avaliar os resultados:
 ### Regressão Linear
 ![](https://github.com/luisgustavob78/Future-Sales-Prediction/blob/master/sales_linear_regression.jpg)
 
-## 4. Conclusão
+## 4. Melhorando o modelo com feature engineering
 
-Para os dados desse projeto em específico, os algortimos de regressão linear e random forest apresentaram resultados semelhantes quando comparados pela métrica de erro quadrático médio (RMSE)
+Como os resultados obtidos não foram satisfatórios, buscou-se formas de aumentar a performance do modelo através de um processo mais intenso de feature engineering. Foram criadas 14 novas features a partir das variáveis já existentes, utilizando valores máximos, mínimos, médias e relações entre as variáveis, além de procedimentos de feature scaling. Após essas mudanças, o modelo de regressão linear saiu de um erro quadrático médio (RMSE) de 72 para aproximadamente 13, uma melhora de quase 80% na performance do modelo. Essas modificações estão no aqruivo ipynb 'model_improvement'.
 
 ## 5. Instalação Apache Spark
 
